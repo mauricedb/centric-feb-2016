@@ -1,0 +1,17 @@
+{
+  "name": "OOJavaScript",
+  "version": "1.0.0",
+  "description": "OO JavaScript",
+  "main": "./server/server.js",
+  "scripts": {
+    "start": "node ./server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maurice de Beijer",
+  "license": "MIT",
+  "dependencies": {
+    "connect": "^3.4.1",
+    "open": "0.0.5",
+    "serve-static": "^1.10.2"
+  }
+}
