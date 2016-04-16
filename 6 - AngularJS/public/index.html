@@ -1,28 +1,57 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>The Angular App</title>
     <meta charset="utf-8"/>
 </head>
 <body>
 
+<script>
+    window.token = 'ggggs';
+
+</script>
 <h1>Angular JS</h1>
-<div ng-app="app">
-    <div ng-controller="DemoController">
-        First name: {{person.firstName}}
+
+{{ 1 + 1 }}
+<div data-ng-app="myApp">
+
+    {{ 1 + 1 }}
+
+    <div data-ng-controller="DemoController">
+
+        First name: {{ model.firstName }}
         <br>
-        Last name: {{person.lastName}}
+        Last name: <span data-ng-bind="model.lastName"></span>
+        <br>
+        First name: <input type="text" data-ng-model="model.firstName"/>
+        <br>
+        Last name: <input type="text" data-ng-model="model.lastName"/>
+        <br>
 
-        <form action="">
-            <input type="text" ng-model="person.firstName">
+        <ul>
+            <li ng-repeat="person in people">
+                {{ person.firstName }} {{ person.lastName }}
+                <br>
+                <input type="text" data-ng-model="person.firstName"/>
+            </li>
+        </ul>
 
-        </form>
+        <button ng-click="addPerson()">Add person</button>
+
+
+    </div>
+    <div data-ng-controller="DemoController">
+        <div data-ng-controller="DemoController">
+
+        </div>
+
     </div>
 
 </div>
 
-
+{{ 1 + 1 }}
 <script src="angular-1.5.3/angular.js"></script>
+<script src="angular-1.5.3/angular-route.js"></script>
 <script src="demo.js"></script>
 </body>
 </html>
