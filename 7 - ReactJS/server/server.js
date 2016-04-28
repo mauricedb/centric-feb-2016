@@ -1,0 +1,20 @@
+/**
+ * Created by Maurice on 8/26/2015.
+ */
+
+var express = require('express');
+var serveStatic = require('serve-static');
+var path = require('path');
+var open = require('open');
+var app = express();
+var port = process.env.PORT || 8080;
+
+var movies = require('./movies');
+app.use('/api/movies', movies);
+
+app.use(serveStatic(path.join(__dirname, '..', 'public')));
+
+app.listen(port, function () {
+    console.info('The server is listening at port ' + port);
+    open('http://localhost:' + port, 'chrome');
+});
