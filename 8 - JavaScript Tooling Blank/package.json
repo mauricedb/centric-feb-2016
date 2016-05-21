@@ -1,0 +1,24 @@
+{
+  "name": "tooling",
+  "version": "1.0.0",
+  "description": "Een npm demo",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maurice",
+  "license": "MIT",
+  "dependencies": {
+    "jQuery": "1.7.4",
+    "lodash": "4.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint-plugin-react": "^5.1.1",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "webpack": "^1.13.0"
+  }
+}
