@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Testing JavaScript</title>
+    <link href="/Libs/Bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <base href="/"/>
+</head>
+<body>
+
+<div class="container" ng-app="mainApp" >
+    <h1>9 - Testing JavaScript Applications</h1>
+
+    <div ng-controller="DemController">
+        {{message}}
+
+        <ul>
+            <li ng-repeat="person in people">
+                {{person.firstName}}
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="libs/angular/angular.js"></script>
+<script src="app/index.js"></script>
+</body>
+</html>

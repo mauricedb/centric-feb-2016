@@ -1,0 +1,13 @@
+{
+  "framework": "jasmine2",
+  "launch_in_dev": [
+    "IE"
+  ],
+  "src_files": [
+    "public/libs/angular/angular.js",
+    "public/libs/angular-mocks/angular-mocks.js",
+    "public/app/**/*.js",
+    "public/start/**/*.js",
+    "tests/**/*.js"
+  ]
+}

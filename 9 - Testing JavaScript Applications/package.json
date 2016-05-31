@@ -1,0 +1,22 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "9 - Testing JavaScript Applications",
+  "main": "./server/server.js",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "open": "^0.0.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-main-bower-files": "^1.5.1",
+    "phantomjs": "^2.1.7"
+  },
+  "scripts": {
+    "start": "node ./server/server.js",
+    "gulp": "node ./node_modules/gulp/bin/gulp.js"
+  },
+  "author": "Maurice de Beijer",
+  "license": "ISC"
+}
