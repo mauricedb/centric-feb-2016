@@ -3,7 +3,8 @@ var calculator = {
     add: function(x, y){
         return x + y;
     },
-    clear: function(){
-
+    doStuff: function(obj){
+        return {x:1};
     }
+
 };

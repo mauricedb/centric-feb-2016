@@ -13,13 +13,10 @@
 
             $scope.$broadcast('Test', 1);
         })
-        .service('aaa', function () {
-            this.query = function () {
-
-            };
-
+        .factory('stuff', function(){
+            return {};
         })
-        .factory('people', function ($http) {
+        .factory('people', function ($http, stuff) {
             var data = [
                 {firstName: 'Maurice'},
                 {firstName: 'Jack'},
