@@ -9,7 +9,7 @@
     "open": "^0.0.5"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-main-bower-files": "^1.5.1",
     "phantomjs": "^2.1.7"
   },
